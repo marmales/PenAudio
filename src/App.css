@@ -1,0 +1,11 @@
+@import "./styles/mobile.css";
+@import "./styles/desktop.css";
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
