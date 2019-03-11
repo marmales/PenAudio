@@ -7,7 +7,10 @@ class UploadFile extends Component {
     render() {
         return(
             <div>
-                <input type="file"/>
+                <form action="https://localhost:5001/audio/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="Audio" id="Audio" />
+                    <input type="submit" />
+                </form>
             </div>
         );
     }
