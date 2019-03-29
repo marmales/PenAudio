@@ -21,9 +21,7 @@ class UploadFile extends Component {
         })
             .then(response => {
                 this.props.updateLoadingStatus(false);
-                this.props.updateCurrentFile({
-                    title: response.data.title
-                });
+                this.props.updateCurrentFile(response.data);
             });
         event.preventDefault();
     };
