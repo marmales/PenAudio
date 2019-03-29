@@ -1,7 +1,7 @@
-export function startLoading() {
-    return { type: "UPLOAD_STARTED", isLoading: true};
-}
+export const updateLoadingStatus = isLoading => {
+    return { type: "LOADING_STATUS", isLoading };
+};
 
-export function stopLoading() {
-    return { type: "UPLOADED", isLoading: false};
-}
+export const updateCurrentFile = file => {
+    return { type: "UPLOAD_STATUS", file };
+};
